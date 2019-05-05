@@ -1,4 +1,4 @@
-package com.liuxi.examplespringbootstarter.config;
+package com.example.starter.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

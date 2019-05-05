@@ -1,7 +1,7 @@
-package com.liuxi.examplespringbootstarter.autoconfig;
+package com.example.starter.autoconfig;
 
-import com.liuxi.examplespringbootstarter.config.StarterServiceProperties;
-import com.liuxi.examplespringbootstarter.service.StarterService;
+import com.example.starter.config.StarterServiceProperties;
+import com.example.starter.service.StarterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -20,7 +20,7 @@ public class StarterAutoConfigure {
 
     @Bean
     @ConditionalOnMissingBean
-    @ConditionalOnProperty(prefix = "example.service" , value = "enable", havingValue = "true")
+    @ConditionalOnProperty(prefix = "example.service" , value = "enabled", havingValue = "1")
     public StarterService starterService(){
         return new StarterService(starterServiceProperties.getConfig());
     }

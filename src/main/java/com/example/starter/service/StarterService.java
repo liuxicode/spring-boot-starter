@@ -1,4 +1,4 @@
-package com.liuxi.examplespringbootstarter.service;
+package com.example.starter.service;
 
 import org.springframework.util.StringUtils;
 
@@ -12,7 +12,7 @@ public class StarterService {
 
     public String[] split(String splitStr){
 
-        return StringUtils.split(config,splitStr);
+        return config != null ? config.split(splitStr) : new String[]{};
 
     }
 }

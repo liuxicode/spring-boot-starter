@@ -8,7 +8,7 @@
 		<version>2.1.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.liuxi</groupId>
+	<groupId>com.example.starter</groupId>
 	<artifactId>example-spring-boot-starter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>example-spring-boot-starter</name>
@@ -30,13 +30,13 @@
 		</dependency>
 	</dependencies>
 
-	<build>
+<!--	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
+	</build>-->
 
 </project>
